@@ -1,0 +1,190 @@
+@font-face {
+    font-family: pmdFont;
+    src: url(PKMN-Mystery-Dungeon.ttf);
+}
+
+* {
+    font-family: pmdFont;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+}
+
+a {
+    color: inherit;
+}
+
+
+h3 {
+    font-weight: normal;
+}
+
+body {
+    background: url(background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.intro {
+    width: 65%;
+    max-width: 900px;
+    margin: 3rem!important;
+}
+.intro > p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+
+.text-box {
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    color: white;
+    background-color: #212021DF;
+
+    border-radius: 20px;
+    border: 20px solid transparent;
+    border-image: url(pmdtextbox.png) 40 round;
+}
+
+
+
+.question {
+    width: 55%;
+    max-width: 800px;
+
+    padding: 1rem 1.5rem;
+}
+.question > label {
+    padding: 0 1rem;
+}
+.question > input {
+    margin: 1rem 0;
+}
+
+
+
+.finish-btn {
+    cursor: pointer;
+}
+
+
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+}
+input+label {
+    background-image: url(pointer-unselected.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: all .1s ease-in-out;
+    -webkit-transition:all .1s ease-in-out;
+    -o-transition:all .1s ease-in-out;
+    -moz-transition:all .1s ease-in-out;
+}
+input:checked+label {
+    background-image: url(pointer.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+
+.result-icons {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: .8rem;
+
+}
+
+
+
+.starter-icon {
+    /* border-radius: 20px;
+    border: 20px solid transparent;
+    border-image: url(pmdtextbox.png) 40 round;
+    */
+
+    width: 100px;
+    border-radius: 10px;
+    display: block;
+    padding: .2rem;
+}
+
+
+
+.all-results-nature {
+    padding-right: 1rem;
+}
+
+
+
+.final-result > h3 {
+    margin-bottom: 1rem;
+}
+
+
+
+.to-top-butt {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    font-size: 1.1rem;
+
+    margin: .5rem;
+    padding: .5rem;
+
+    color:#212021;
+    background-color: #ffffff99;
+
+    border-radius: 15px;
+
+    transition: all .1s ease-in-out;
+    -webkit-transition:all .1s ease-in-out;
+    -o-transition:all .1s ease-in-out;
+    -moz-transition:all .1s ease-in-out;
+}
+.to-top-butt:hover {
+    color: #24A624;
+    background-color: #ffffffaf;
+}
+
+
+
+@wkeyframes fade {
+    0% { opacity: 100%; }
+    100% { opacity 0%; }
+}
