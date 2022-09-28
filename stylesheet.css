@@ -21,7 +21,13 @@ h3 {
     font-weight: normal;
 }
 
+
+body::after {
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url(background.png) url(background-dark.png);
+}
 #bgElem {
+    transform: translate3d(0,0,0);  /* gets rid of white space after scrolling down on safari */
     background-image: url(background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -42,38 +48,37 @@ h3 {
 
 
 
-.navbar {
+.sideButts {
     position: fixed;
-    top: 0;
-    width: 100%;
-    height: 2.5rem;
 
-    text-align: right;
+    margin: .5rem;
+    padding: .5rem .7rem;
 
-    background-color: #212021DF;
-}
-
-
-
-.toggleBGButton {
-    padding: .3rem;
-    margin: .3rem;
-
+    font-size: 1.1rem;
+    
     border: none;
     border-radius: 15px;
 
     color: #212021;
-    background-color: #ffffffaf;
+    background-color: #ffffff88;
+
+    cursor: pointer;
 
     transition: all .1s ease-in-out;
     -webkit-transition:all .1s ease-in-out;
     -o-transition:all .1s ease-in-out;
     -moz-transition:all .1s ease-in-out;
-
-    cursor: pointer;
 }
-.toggleBGButton:hover {
-    background-color: #ffffff;
+.sideButts:hover {
+    color: #24A624;
+    background-color: #ffffffaf;
+}
+
+
+
+.toggleBGButton {
+    top: 0;
+    right: 0;
 }
 
 
@@ -135,7 +140,7 @@ h3 {
     width: 55%;
     max-width: 800px;
 
-    padding: .5rem 1rem;
+    padding: .8rem 1.3rem;
 }
 .question > h3 {
     margin-bottom: 1rem;
@@ -219,26 +224,6 @@ input:checked+label {
 
 
 .to-top-butt {
-    position: fixed;
     bottom: 0;
     right: 0;
-
-    font-size: 1.1rem;
-
-    margin: .3rem;
-    padding: .3rem;
-
-    color:#212021;
-    background-color: #ffffff99;
-
-    border-radius: 15px;
-
-    transition: all .1s ease-in-out;
-    -webkit-transition:all .1s ease-in-out;
-    -o-transition:all .1s ease-in-out;
-    -moz-transition:all .1s ease-in-out;
-}
-.to-top-butt:hover {
-    color: #24A624;
-    background-color: #ffffffaf;
 }
