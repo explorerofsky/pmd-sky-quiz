@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PMD2 - Full Personality Quiz</title>
+
+    <link rel="icon" href="favicon.png">
 
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body onload="setInputLabelFields()">
+<body onload="setInputLabelFields()" id="bodyElem">
+    <nav class="navbar">
+        <button onclick="toggleBackground()" class="toggleBGButton">Dark Mode Toggle</button>
+    </nav>
     <main class="flex direction-row justify-center align-center">
         <form name="quiz-form" class="questions flex direction-column justify-center align-center">
 
             <div class="text-box intro">
                 <p>Welcome! This is the portal that leads to the world inhabited only by Pokémon.</p>
-                <p>Also, this is a comprehensive version of Pokémon Mystery Dungeon: Explorer of Sky's personality quiz. At the end, you'll be given all starter options for your top natures, as well as a breakdown of all your scores. You don't have to answer every question if you don't want to. But...</p>
+                <p>Also, this is the comprehensive personality quiz from Pokémon Mystery Dungeon: Explorer of Sky.</p>
+                <p>The game normally gives you 8 out of the 63 total questions- this quiz asks you all of them. Gender is not considered, and you'll receive both starter candidates for your highest ranked natures, as well as a total point breakdown. You can leave questions blank. But...</p>
                 <p>Be truthful when you answer them!</p>
                 <p>Now, are you ready?</p>
-                <p>Then... let the questions begin!</p>
+                <p>Then...let the questions begin!</p>
             </div>
 
             <div class="question text-box">
@@ -644,7 +650,7 @@
                 <label for="">Answer questions properly.</label><br>
             
                 <input type="radio" id="" name="" value="Bold:1,Naive:2" class="inputAnswer">
-                <label for="">Yuck it up! Woo-hoo! I'm on TV</label><br>
+                <label for="">Yuck it up! Woo-hoo! I'm on TV.</label><br>
             </div>
     
             <div class="question text-box">
@@ -776,7 +782,7 @@
                 <label for="">Keep it to myself! It's too risky!</label><br>
             </div>
     
-            <button type="button" onclick="getNature()" class="finish-btn text-box">You seem to be...</button>
+            <button type="button" onclick="getNature()" class="finish-btn">You seem to be...</button>
         </form>
     </main>
     <div class="flex direction-column align-center">

@@ -114,7 +114,6 @@ function getNature()
         allResultsNatureStr += i + "<br>";
         if (result[i] === resultMaxValue)
         {
-            console.log(i);
             finalResultStr += i + ", ";
             starterIcons.innerHTML += '<img src="' + resultIconsFemale[i] + '.png" alt="' + resultIconsFemale[i] + '" class="starter-icon"></img>';
             starterIcons.innerHTML += '<img src="' + resultIconsMale[i] + '.png" alt="' + resultIconsMale[i] + '" class="starter-icon"></img>';
@@ -130,4 +129,8 @@ function getNature()
     document.querySelector(".final-result-value").innerHTML = finalResultStr.slice(0, -2);
     document.querySelector(".all-results-nature").innerHTML = allResultsNatureStr;
     document.querySelector(".all-results-value").innerHTML = allResultsValueStr;
+}
+
+function toggleBackground() {
+    document.getElementById('bodyElem').classList.toggle('dark-mode');
 }
