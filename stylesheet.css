@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.2rem;
 }
 
@@ -118,8 +118,8 @@ h3 {
     color: white;
     background-color: #212021DF;
 
-    border-radius: 20px;
-    border: 25px solid transparent;
+    border-radius: 15px;
+    border: 15px solid transparent;
     border-image: url(pmdtextbox.png) 37 round;
 }
 
@@ -241,10 +241,4 @@ input:checked+label {
 .to-top-butt:hover {
     color: #24A624;
     background-color: #ffffffaf;
-}
-
-@media only screen and (min-width: 768px) {
-    * {
-        font-size: 1.2rem;
-    }
 }
