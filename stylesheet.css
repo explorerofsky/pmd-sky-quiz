@@ -108,7 +108,7 @@ body::after {
 .intro {
     width: 65%;
     max-width: 900px;
-    margin: 3rem!important;
+    margin: 0 0 4rem 0!important;
 }
 .intro > p:not(:last-child) {
     margin-bottom: 1rem;
