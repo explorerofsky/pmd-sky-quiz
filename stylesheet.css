@@ -8,8 +8,8 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-size: 1.2rem;
-    line-height: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 a {
@@ -21,19 +21,22 @@ h3 {
     font-weight: normal;
 }
 
-#bodyElem {
+#bgElem {
     background-image: url(background.png);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: fixed;
     height: 100vh;
+    width: 100vw;
+
+    z-index: -999;
     transition: all .1s ease-in-out;
     -webkit-transition:all .1s ease-in-out;
     -o-transition:all .1s ease-in-out;
     -moz-transition:all .1s ease-in-out;
 }
-#bodyElem.dark-mode {
+#bgElem.dark-mode {
     background-image: url(background-dark.png);
 }
 
@@ -116,7 +119,7 @@ h3 {
     background-color: #212021DF;
 
     border-radius: 20px;
-    border: 20px solid transparent;
+    border: 25px solid transparent;
     border-image: url(pmdtextbox.png) 37 round;
 }
 
@@ -132,7 +135,10 @@ h3 {
     width: 55%;
     max-width: 800px;
 
-    padding: 1rem 1.5rem;
+    padding: .5rem 1rem;
+}
+.question > h3 {
+    margin-bottom: 1rem;
 }
 .question > label {
     padding: 1rem;
@@ -162,8 +168,7 @@ h3 {
 
 
 input {
-    appearance: none;
-    -webkit-appearance: none;
+    opacity: 0;
 }
 input+label {
     background-image: url(pointer-unselected.png);
@@ -236,4 +241,10 @@ input:checked+label {
 .to-top-butt:hover {
     color: #24A624;
     background-color: #ffffffaf;
+}
+
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 1.2rem;
+    }
 }

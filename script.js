@@ -132,5 +132,5 @@ function getNature()
 }
 
 function toggleBackground() {
-    document.getElementById('bodyElem').classList.toggle('dark-mode');
+    document.getElementById('bgElem').classList.toggle('dark-mode');
 }
